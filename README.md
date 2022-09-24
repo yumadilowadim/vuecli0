@@ -1,4 +1,8 @@
-# vuecli0
+# vue cli for YII2 REST API
+
+Проект основан на представленном API из проекта: https://github.com/yumadilowadim/yii2testapi
+
+При старте необходимо задать Ваше значение для url. Это можно сделать по пути: `/src/App.vue` (значение "main_url").
 
 ## Project setup
 ```

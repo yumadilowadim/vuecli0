@@ -32,16 +32,17 @@ export default {
     return {
       token: 'RbN_098uIu_po00NXZz',
       clients: null,
+      main_url: 'http://yii2testapi',
       cars: null,
       load: true
     };
   },
   mounted() {
     axios
-        .get('http://yii2testapi/web/api/clients?access-token='+this.token)
+        .get(this.main_url+'/web/api/clients?access-token='+this.token)
         .then(response => (this.clients = response.data));
     axios
-        .get('http://yii2testapi/web/api/cars/list?access-token='+this.token)
+        .get(this.main_url+'/web/api/cars/list?access-token='+this.token)
         .then(response => (this.cars = response.data, this.load = false));
   }
 }
